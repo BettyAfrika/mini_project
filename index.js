@@ -8,14 +8,14 @@ dotenv.config()
 app.get('/', async function (req, res) {
     let email = req.query.email;
     if (!email)
-    return res.status(400).send('no email')
+        return res.status(400).json({ message: "No Email" })
 
-    let result = await axios.get("https://verifier.meetchopra.com/verify/"+email+"?token="+process.env.API_KEY)
+    let result = await axios.get("https://verifier.meetchopra.com/verify/" + email + "?token=" + process.env.API_KEY)
     console.log(result.data)
     if (result.data.status)
-    return res.send('valid email' )
+        return res.json({ message: "Valid Email" })
     else {
-        return res.send(result.data.error.message)
+        return res.status(400).json({ message: result.data.error.message })
     }
 })
 
