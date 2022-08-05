@@ -30,7 +30,7 @@
 6.	We then go to a browser and inside the URL field we write down “localhost:3000/?email=” after that we write down an email address we wish to be validated and press “enter”.
 •	Below are a few scenarios on how to perform step 6.
 Scenario for an invalid email address:
-if  betty@fnn.com is the email address I wanted to validate, I would go to a browser and type “localhost:3000?=email=betty@fnn.com” under the URL, if I then clicked on “enter”, it should display the below message since I provided an invalid email.
+if  betty@fnn.com is the email address I wanted to validate, I would go to a browser and type “localhost:3000?email=betty@fnn.com” under the URL, if I then clicked on “enter”, it should display the below message since I provided an invalid email.
 : {"message":"Email address invalid"}
 
     Scenario for a valid email address:
