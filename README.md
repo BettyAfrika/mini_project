@@ -39,7 +39,7 @@ if  betty@fnn.com is the email address I wanted to validate, I would go to a bro
 
     Scenario for a disposable  email address:
     We can get a temporary/disposable email using for example : https://10minutemail.com/ , then we can copy and paste the provided email on our URL like this:
-    localhost:3000?=email= “THE DISPOSABLE EMAIL”
+    localhost:3000?email= “THE DISPOSABLE EMAIL”
     NOTE: “THE DISPOSABLE EMAIL” is where we place the temporary/disposable email address.
 
 7.	This action should display with an informative message describing the validation performed on the email address we provided.
